@@ -34,20 +34,18 @@ public class ProductSrt extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
-    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
-            throws ServletException, IOException {
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response){
         response.setContentType("text/html;charset=UTF-8");
-        String idCedula = request.getParameter("txtproducto");
         String Name = request.getParameter("txtNombre");
         String UDisponibles = request.getParameter("txtUDisponibles");
         String Precio = request.getParameter("txtPrecio");
         String Des = request.getParameter("txtDes");
-        int idPro = Integer.parseInt(idCedula);
+        //int idPro = Integer.parseInt(idCedula);
         float dbPrecio = Float.parseFloat(Precio);
 
-        insertProduct(idPro, Name, UDisponibles, dbPrecio, Des);
-        
-        String idCedulaM = request.getParameter("txtproductom");
+        insertProduct(-1, Name, UDisponibles, dbPrecio, Des);
+
+        String idCedulaM = request.getParameter("txtproductoM");
         String NameM = request.getParameter("txtNombreM");
         String LastNameM = request.getParameter("txtUDisponiblesM");
         String PrecioM = request.getParameter("txtPrecioM");
@@ -57,9 +55,9 @@ public class ProductSrt extends HttpServlet {
         
         udapteProduct(idProM, NameM, LastNameM, dbPrecioM, DesM);
         
-        int idCedulaE = request.getIntHeader("txtproductoE"); 
-        //int idProE = Integer.parseInt(idCedulaE);
-        deleteProduct(idCedulaE);
+        //String txtProE = request.getParameter("txtProdE"); 
+        //int idProE = Integer.parseInt(txtProE);
+        //deleteProduct(idProE);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

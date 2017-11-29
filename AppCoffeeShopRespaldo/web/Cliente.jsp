@@ -3,6 +3,7 @@
     Author     : diego
 --%>
 
+<%@page import="java.sql.ResultSet"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -112,6 +113,42 @@
             </form>
         </div>
     </center>
+    <div>
+        <jsp:useBean id="DAOSelect" scope="page" class="DAO.DAOCliente" />
+        <div class="cont_tabla" style="overflow-x:auto;">
+            <h1>Tabla Doctor</h1>
+            <%
+                ResultSet rsDoc = DAOSelect.Select();
+            %>
+
+            <table class="table table-bordered" border ="1" id="tabla">
+                <tr style="background-color:#FEBE10">
+                    <th>Identificacion</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Especialidad</th>
+                    <th>Estado</th>
+                </tr>
+                <%
+                    while (rsDoc.next()) {
+                %>
+                <tr>
+                    <td><%=rsDoc.getString(1)%></td>
+                    <td><%=rsDoc.getString(2)%></td>
+                    <td><%=rsDoc.getString(3)%></td>
+                    <td><%=rsDoc.getString(4)%></td>
+                    <td><%=rsDoc.getString(5)%></td>
+
+                </tr>
+                <%
+                    }
+                %>
+
+
+            </table>
+        </div>
+
+    </div>
 </body>
 </html>
 

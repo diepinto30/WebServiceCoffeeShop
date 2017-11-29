@@ -24,12 +24,18 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _DeleteSeller_QNAME = new QName("http://WebService/", "DeleteSeller");
-    private final static QName _DeleteSellerResponse_QNAME = new QName("http://WebService/", "DeleteSellerResponse");
-    private final static QName _InsertSeller_QNAME = new QName("http://WebService/", "InsertSeller");
-    private final static QName _InsertSellerResponse_QNAME = new QName("http://WebService/", "InsertSellerResponse");
-    private final static QName _UpdateSeller_QNAME = new QName("http://WebService/", "UpdateSeller");
-    private final static QName _UpdateSellerResponse_QNAME = new QName("http://WebService/", "UpdateSellerResponse");
+    private final static QName _Delete_QNAME = new QName("http://WebService/", "Delete");
+    private final static QName _DeleteResponse_QNAME = new QName("http://WebService/", "DeleteResponse");
+    private final static QName _InsertInvoice_QNAME = new QName("http://WebService/", "InsertInvoice");
+    private final static QName _InsertInvoiceResponse_QNAME = new QName("http://WebService/", "InsertInvoiceResponse");
+    private final static QName _MaMInvoiceProductDelete_QNAME = new QName("http://WebService/", "MaMInvoiceProductDelete");
+    private final static QName _MaMInvoiceProductDeleteResponse_QNAME = new QName("http://WebService/", "MaMInvoiceProductDeleteResponse");
+    private final static QName _MaMInvoiceProductInsert_QNAME = new QName("http://WebService/", "MaMInvoiceProductInsert");
+    private final static QName _MaMInvoiceProductInsertResponse_QNAME = new QName("http://WebService/", "MaMInvoiceProductInsertResponse");
+    private final static QName _MaMInvoiceProductUpdate_QNAME = new QName("http://WebService/", "MaMInvoiceProductUpdate");
+    private final static QName _MaMInvoiceProductUpdateResponse_QNAME = new QName("http://WebService/", "MaMInvoiceProductUpdateResponse");
+    private final static QName _UpdateInvoice_QNAME = new QName("http://WebService/", "UpdateInvoice");
+    private final static QName _UpdateInvoiceResponse_QNAME = new QName("http://WebService/", "UpdateInvoiceResponse");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: webservice
@@ -39,105 +45,207 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DeleteSeller }
+     * Create an instance of {@link Delete }
      * 
      */
-    public DeleteSeller createDeleteSeller() {
-        return new DeleteSeller();
+    public Delete createDelete() {
+        return new Delete();
     }
 
     /**
-     * Create an instance of {@link DeleteSellerResponse }
+     * Create an instance of {@link DeleteResponse }
      * 
      */
-    public DeleteSellerResponse createDeleteSellerResponse() {
-        return new DeleteSellerResponse();
+    public DeleteResponse createDeleteResponse() {
+        return new DeleteResponse();
     }
 
     /**
-     * Create an instance of {@link InsertSeller }
+     * Create an instance of {@link InsertInvoice }
      * 
      */
-    public InsertSeller createInsertSeller() {
-        return new InsertSeller();
+    public InsertInvoice createInsertInvoice() {
+        return new InsertInvoice();
     }
 
     /**
-     * Create an instance of {@link InsertSellerResponse }
+     * Create an instance of {@link InsertInvoiceResponse }
      * 
      */
-    public InsertSellerResponse createInsertSellerResponse() {
-        return new InsertSellerResponse();
+    public InsertInvoiceResponse createInsertInvoiceResponse() {
+        return new InsertInvoiceResponse();
     }
 
     /**
-     * Create an instance of {@link UpdateSeller }
+     * Create an instance of {@link MaMInvoiceProductDelete }
      * 
      */
-    public UpdateSeller createUpdateSeller() {
-        return new UpdateSeller();
+    public MaMInvoiceProductDelete createMaMInvoiceProductDelete() {
+        return new MaMInvoiceProductDelete();
     }
 
     /**
-     * Create an instance of {@link UpdateSellerResponse }
+     * Create an instance of {@link MaMInvoiceProductDeleteResponse }
      * 
      */
-    public UpdateSellerResponse createUpdateSellerResponse() {
-        return new UpdateSellerResponse();
+    public MaMInvoiceProductDeleteResponse createMaMInvoiceProductDeleteResponse() {
+        return new MaMInvoiceProductDeleteResponse();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteSeller }{@code >}}
+     * Create an instance of {@link MaMInvoiceProductInsert }
      * 
      */
-    @XmlElementDecl(namespace = "http://WebService/", name = "DeleteSeller")
-    public JAXBElement<DeleteSeller> createDeleteSeller(DeleteSeller value) {
-        return new JAXBElement<DeleteSeller>(_DeleteSeller_QNAME, DeleteSeller.class, null, value);
+    public MaMInvoiceProductInsert createMaMInvoiceProductInsert() {
+        return new MaMInvoiceProductInsert();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteSellerResponse }{@code >}}
+     * Create an instance of {@link MaMInvoiceProductInsertResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://WebService/", name = "DeleteSellerResponse")
-    public JAXBElement<DeleteSellerResponse> createDeleteSellerResponse(DeleteSellerResponse value) {
-        return new JAXBElement<DeleteSellerResponse>(_DeleteSellerResponse_QNAME, DeleteSellerResponse.class, null, value);
+    public MaMInvoiceProductInsertResponse createMaMInvoiceProductInsertResponse() {
+        return new MaMInvoiceProductInsertResponse();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link InsertSeller }{@code >}}
+     * Create an instance of {@link MaMInvoiceProductUpdate }
      * 
      */
-    @XmlElementDecl(namespace = "http://WebService/", name = "InsertSeller")
-    public JAXBElement<InsertSeller> createInsertSeller(InsertSeller value) {
-        return new JAXBElement<InsertSeller>(_InsertSeller_QNAME, InsertSeller.class, null, value);
+    public MaMInvoiceProductUpdate createMaMInvoiceProductUpdate() {
+        return new MaMInvoiceProductUpdate();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link InsertSellerResponse }{@code >}}
+     * Create an instance of {@link MaMInvoiceProductUpdateResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://WebService/", name = "InsertSellerResponse")
-    public JAXBElement<InsertSellerResponse> createInsertSellerResponse(InsertSellerResponse value) {
-        return new JAXBElement<InsertSellerResponse>(_InsertSellerResponse_QNAME, InsertSellerResponse.class, null, value);
+    public MaMInvoiceProductUpdateResponse createMaMInvoiceProductUpdateResponse() {
+        return new MaMInvoiceProductUpdateResponse();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateSeller }{@code >}}
+     * Create an instance of {@link UpdateInvoice }
      * 
      */
-    @XmlElementDecl(namespace = "http://WebService/", name = "UpdateSeller")
-    public JAXBElement<UpdateSeller> createUpdateSeller(UpdateSeller value) {
-        return new JAXBElement<UpdateSeller>(_UpdateSeller_QNAME, UpdateSeller.class, null, value);
+    public UpdateInvoice createUpdateInvoice() {
+        return new UpdateInvoice();
     }
 
     /**
-     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateSellerResponse }{@code >}}
+     * Create an instance of {@link UpdateInvoiceResponse }
      * 
      */
-    @XmlElementDecl(namespace = "http://WebService/", name = "UpdateSellerResponse")
-    public JAXBElement<UpdateSellerResponse> createUpdateSellerResponse(UpdateSellerResponse value) {
-        return new JAXBElement<UpdateSellerResponse>(_UpdateSellerResponse_QNAME, UpdateSellerResponse.class, null, value);
+    public UpdateInvoiceResponse createUpdateInvoiceResponse() {
+        return new UpdateInvoiceResponse();
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link Delete }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "Delete")
+    public JAXBElement<Delete> createDelete(Delete value) {
+        return new JAXBElement<Delete>(_Delete_QNAME, Delete.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link DeleteResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "DeleteResponse")
+    public JAXBElement<DeleteResponse> createDeleteResponse(DeleteResponse value) {
+        return new JAXBElement<DeleteResponse>(_DeleteResponse_QNAME, DeleteResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link InsertInvoice }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "InsertInvoice")
+    public JAXBElement<InsertInvoice> createInsertInvoice(InsertInvoice value) {
+        return new JAXBElement<InsertInvoice>(_InsertInvoice_QNAME, InsertInvoice.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link InsertInvoiceResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "InsertInvoiceResponse")
+    public JAXBElement<InsertInvoiceResponse> createInsertInvoiceResponse(InsertInvoiceResponse value) {
+        return new JAXBElement<InsertInvoiceResponse>(_InsertInvoiceResponse_QNAME, InsertInvoiceResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaMInvoiceProductDelete }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "MaMInvoiceProductDelete")
+    public JAXBElement<MaMInvoiceProductDelete> createMaMInvoiceProductDelete(MaMInvoiceProductDelete value) {
+        return new JAXBElement<MaMInvoiceProductDelete>(_MaMInvoiceProductDelete_QNAME, MaMInvoiceProductDelete.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaMInvoiceProductDeleteResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "MaMInvoiceProductDeleteResponse")
+    public JAXBElement<MaMInvoiceProductDeleteResponse> createMaMInvoiceProductDeleteResponse(MaMInvoiceProductDeleteResponse value) {
+        return new JAXBElement<MaMInvoiceProductDeleteResponse>(_MaMInvoiceProductDeleteResponse_QNAME, MaMInvoiceProductDeleteResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaMInvoiceProductInsert }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "MaMInvoiceProductInsert")
+    public JAXBElement<MaMInvoiceProductInsert> createMaMInvoiceProductInsert(MaMInvoiceProductInsert value) {
+        return new JAXBElement<MaMInvoiceProductInsert>(_MaMInvoiceProductInsert_QNAME, MaMInvoiceProductInsert.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaMInvoiceProductInsertResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "MaMInvoiceProductInsertResponse")
+    public JAXBElement<MaMInvoiceProductInsertResponse> createMaMInvoiceProductInsertResponse(MaMInvoiceProductInsertResponse value) {
+        return new JAXBElement<MaMInvoiceProductInsertResponse>(_MaMInvoiceProductInsertResponse_QNAME, MaMInvoiceProductInsertResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaMInvoiceProductUpdate }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "MaMInvoiceProductUpdate")
+    public JAXBElement<MaMInvoiceProductUpdate> createMaMInvoiceProductUpdate(MaMInvoiceProductUpdate value) {
+        return new JAXBElement<MaMInvoiceProductUpdate>(_MaMInvoiceProductUpdate_QNAME, MaMInvoiceProductUpdate.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link MaMInvoiceProductUpdateResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "MaMInvoiceProductUpdateResponse")
+    public JAXBElement<MaMInvoiceProductUpdateResponse> createMaMInvoiceProductUpdateResponse(MaMInvoiceProductUpdateResponse value) {
+        return new JAXBElement<MaMInvoiceProductUpdateResponse>(_MaMInvoiceProductUpdateResponse_QNAME, MaMInvoiceProductUpdateResponse.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateInvoice }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "UpdateInvoice")
+    public JAXBElement<UpdateInvoice> createUpdateInvoice(UpdateInvoice value) {
+        return new JAXBElement<UpdateInvoice>(_UpdateInvoice_QNAME, UpdateInvoice.class, null, value);
+    }
+
+    /**
+     * Create an instance of {@link JAXBElement }{@code <}{@link UpdateInvoiceResponse }{@code >}}
+     * 
+     */
+    @XmlElementDecl(namespace = "http://WebService/", name = "UpdateInvoiceResponse")
+    public JAXBElement<UpdateInvoiceResponse> createUpdateInvoiceResponse(UpdateInvoiceResponse value) {
+        return new JAXBElement<UpdateInvoiceResponse>(_UpdateInvoiceResponse_QNAME, UpdateInvoiceResponse.class, null, value);
     }
 
 }

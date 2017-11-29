@@ -28,10 +28,6 @@
                 <table border="0">
                     <tbody>
                         <tr>
-                            <td>Id Producto:</td>
-                            <td><input type="text" name="txtproducto" value="" /></td>
-                        </tr>
-                        <tr>
                             <td>Nombre del Poducto</td>
                             <td><input type="text" name="txtNombre" value="" /></td>
                         </tr>
@@ -54,30 +50,30 @@
                 </table>
             </form>
         </a>
-        <a class="registrarModificar" style="margin-top: 1.5%;">
-            <a>REGISTRAR PRODUCTOS</a>
+        <a class="modificarModificar" style="margin-top: 1.5%;">
+            <a>MODIFICAR PRODUCTOS</a>
             <form action="ProductSrt" method="POST">
                 <table border="0">
                     <tbody>
                         <tr>
                             <td>Id Producto:</td>
-                            <td><input type="text" name="txtproducto" value="" /></td>
+                            <td><input type="text" name="txtproductoM" value="" /></td>
                         </tr>
                         <tr>
                             <td>Nombre del Poducto</td>
-                            <td><input type="text" name="txtNombre" value="" /></td>
+                            <td><input type="text" name="txtNombreM" value="" /></td>
                         </tr>
                         <tr>
                             <td>Unidades Disponibles</td>
-                            <td><input type="text" name="txtUDisponibles" value="" /></td>
+                            <td><input type="text" name="txtUDisponiblesM" value="" /></td>
                         </tr>
                         <tr>
                             <td>Precio</td>
-                            <td><input type="text" name="txtPrecio" value="" /></td>
+                            <td><input type="text" name="txtPrecioM" value="" /></td>
                         </tr>
                         <tr>
                             <td>Descripción</td>
-                            <td><input type="text" name="txtDes" value="" /></td>
+                            <td><input type="text" name="txtDesM" value="" /></td>
                         </tr>
                         <tr>
                             <td><input type="submit" value="MODIFICAR" /></td>
@@ -86,22 +82,7 @@
                 </table>
             </form>
         </a>
-        <div class="eliminarProductos" style="margin-top: 2.5%;">
-            <a>ELIMINAR PRODUCTOS</a>
-            <form action="ProductSrt" method="POST" >
-                <table border="0">
-                    <tbody>
-                        <tr>
-                            <td>Id Producto</td>
-                            <td><input type="text" name="txtProE" value="" /></td>
-                        </tr>
-                        <tr>
-                            <td><input type="submit" value="ELIMINAR" /></td>
-                        </tr>
-                    </tbody>
-                </table>
-            </form>
-        </div>
+        
     </center>
 </body>
 </html>
