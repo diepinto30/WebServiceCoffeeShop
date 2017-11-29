@@ -1,0 +1,43 @@
+* {
+    border-radius: 4px;
+    font-family: "skia";
+    line-height: 1.2em;
+}
+
+.Botones{
+    background-color: black;
+    margin-bottom: 2em;
+    text-align: center;
+    position: static;
+    height: 3em;
+    width: 70%;
+    margin-left: 15%;
+}
+
+.b1 {
+    position: relative;
+    margin-left: 20%;
+    top: 0.1em;
+    width: 15%;
+    height: 3em;
+    
+}
+.b2{
+    position: relative;
+    margin-top: 0.6em;
+    width: 15%;
+    height: 3em;
+    margin-left: 4.5em;
+}
+.b3 {
+    float: right;
+    margin-right: 20%;
+    margin-top: 0.8%;
+    position: relative;
+    width: 15%;
+    height: 3em;
+    margin-left: 4em;
+}
+
+
+

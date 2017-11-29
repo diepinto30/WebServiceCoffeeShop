@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?><!--
+        *** GENERATED FROM jax-ws.xml - DO NOT EDIT !                             ***
+        *** TO MODIFY wsimport options USE Web Service node -> Edit WS Attributes ***
+        *** TO CHANGE TARGETS GENERATED TO jaxws-build.xml COPY THOSE             ***
+        *** TARGETS TO ../build.xml AND MODIFY THAT FILE INSTEAD                  ***
+
+        --><project xmlns:xalan="http://xml.apache.org/xslt" xmlns:webproject2="http://www.netbeans.org/ns/web-project/2" xmlns:jaxws="http://www.netbeans.org/ns/jax-ws/1">
+    <!--
+                ===================
+                JAX-WS WSGEN SECTION
+                ===================
+            -->
+    <!--
+                ===================
+                JAX-WS WSIMPORT SECTION
+                ===================
+            -->
+    <target name="wsimport-init" depends="init">
+        <fail if="${wsimport.bad.version}" message="WsImport ant task defined in the classpath ${j2ee.platform.wsimport.classpath} has a serious bug. See http://wiki.netbeans.org/MetroIssue for details."/>
+        <mkdir dir="${build.generated.sources.dir}/jax-ws"/>
+        <property name="j2ee.platform.wsimport.classpath" value="${libs.jaxws21.classpath}"/>
+        <taskdef name="wsimport" classname="com.sun.tools.ws.ant.WsImport">
+            <classpath path="${java.home}/../lib/tools.jar:${j2ee.platform.wsimport.classpath}:${javac.classpath}"/>
+        </taskdef>
+        <condition property="conf-dir" value="${conf.dir}/" else="">
+            <isset property="conf.dir"/>
+        </condition>
+    </target>
+    <target name="wsimport-client-WSGestrionUser" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSGestrionUser"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSGestrionUser" destdir="${build.generated.dir}/jax-wsCache/WSGestrionUser" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSGestrionUser/wsdl/localhost_8081/WebServiceCoffeeShop/WSGestrionUser.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8081/WebServiceCoffeeShop/WSGestrionUser?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSGestrionUser/wsdl/localhost_8081/WebServiceCoffeeShop/WSGestrionUser.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSGestrionUser"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSGestrionUser">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSGestrionUser" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/webservice"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSGestrionUser"/>
+    </target>
+    <target name="wsimport-client-WSSeller" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSSeller"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSSeller" destdir="${build.generated.dir}/jax-wsCache/WSSeller" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSSeller/wsdl/localhost_8081/WebServiceCoffeeShop/WSSeller.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8081/WebServiceCoffeeShop/WSSeller?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSSeller/wsdl/localhost_8081/WebServiceCoffeeShop/WSSeller.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSSeller"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSSeller">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSSeller" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/webservice"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSSeller"/>
+    </target>
+    <target name="wsimport-client-WSProduct" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSProduct"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSProduct" destdir="${build.generated.dir}/jax-wsCache/WSProduct" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSProduct/wsdl/localhost_8081/WebServiceCoffeeShop/WSProduct.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8081/WebServiceCoffeeShop/WSProduct?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSProduct/wsdl/localhost_8081/WebServiceCoffeeShop/WSProduct.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSProduct"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSProduct">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSProduct" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/webservice"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSProduct"/>
+    </target>
+    <target name="wsimport-client-WSInvoice" depends="wsimport-init">
+        <mkdir dir="${build.generated.dir}/jax-wsCache/WSInvoice"/>
+        <wsimport sourcedestdir="${build.generated.dir}/jax-wsCache/WSInvoice" destdir="${build.generated.dir}/jax-wsCache/WSInvoice" wsdl="${basedir}/${conf-dir}xml-resources/web-service-references/WSInvoice/wsdl/localhost_8081/WebServiceCoffeeShop/WSInvoice.wsdl" catalog="catalog.xml" encoding="${source.encoding}" extension="true" verbose="true" fork="false" wsdlLocation="http://localhost:8081/WebServiceCoffeeShop/WSInvoice?wsdl" xnocompile="true" xendorsed="true">
+            <depends file="${basedir}/${conf-dir}xml-resources/web-service-references/WSInvoice/wsdl/localhost_8081/WebServiceCoffeeShop/WSInvoice.wsdl"/>
+            <produces dir="${build.generated.dir}/jax-wsCache/WSInvoice"/>
+        </wsimport>
+        <copy todir="${build.generated.sources.dir}/jax-ws">
+            <fileset dir="${build.generated.dir}/jax-wsCache/WSInvoice">
+                <include name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="wsimport-client-clean-WSInvoice" depends="-init-project">
+        <delete dir="${build.generated.sources.dir}/jax-ws/webservice"/>
+        <delete dir="${build.generated.dir}/jax-wsCache/WSInvoice"/>
+    </target>
+    <target name="wsimport-client-generate" depends="wsimport-client-WSGestrionUser, wsimport-client-WSSeller, wsimport-client-WSProduct, wsimport-client-WSInvoice"/>
+</project>
